@@ -2,3 +2,10 @@
 [build]
   publish = "dist"
   command = "echo 'Using prebuilt dist/'"
+
+# The bundle may be built with Vite base "/vine/" (for GitHub Pages).
+# Serve those paths from the site root so assets load either way.
+[[redirects]]
+  from = "/vine/*"
+  to = "/:splat"
+  status = 200
