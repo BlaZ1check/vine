@@ -1,0 +1,4 @@
+# The repository contains a prebuilt Vite bundle in dist/, so no build step is needed.
+[build]
+  publish = "dist"
+  command = "echo 'Using prebuilt dist/'"
